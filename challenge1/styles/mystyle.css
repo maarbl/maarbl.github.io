@@ -1,0 +1,88 @@
+/* Global styles
+---------------------------- */
+body {
+    background: black;
+background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/N13e7awhgiljgescq/rocket-flying-in-space-retro-cartoon-style-with-flat-design_srla9v7pg_thumbnail-full15.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Nova Square', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+h2 {
+     font-size: 35px;
+    padding-top: 20px;
+     padding-left: 130px;
+}
+
+h3 {
+    font-size: 25px;
+    padding-left: 130px;
+}
+
+table {
+width: 40%;
+    border-spacing: 7px;
+    padding-left: 130px;
+}
+
+td {
+    text-align: right;
+}
+
+th {
+    text-align: left;
+}
+
+#gravitysection {
+    margin-bottom: 100px;
+}
+
+#speed {
+  width: 400px;
+  height: 15px;
+  background: #9acd32;
+  margin-left: 130px;
+}
+
+#throttle {
+  width: 400px;
+  height: 15px;
+  background: #9acd32;
+  margin-left: 130px;
+}
+
+#gravity {
+  width: 400px;
+  height: 15px;
+  background: #9acd32;
+  margin-left: 130px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
