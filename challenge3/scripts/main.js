@@ -79,7 +79,7 @@
       type: "Feature",
       properties: {
         weather: weatherItem.weather[0].main,
-        icon: "http://openweathermap.org/img/w/"
+        icon: "https://openweathermap.org/img/w/"
               + weatherItem.weather[0].icon  + ".png",
         coordinates: [weatherItem.coord.Lon, weatherItem.coord.Lat]
       },
