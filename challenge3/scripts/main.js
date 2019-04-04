@@ -1,8 +1,8 @@
 	var map;
-  	var geoJSON;
-  	var request;
+  var geoJSON;
+  var request;
  	var gettingData = false;
-  	var openWeatherMapKey = "ed3e7dbe9c95a32328d286a0af218f56"
+  var openWeatherMapKey = "ed3e7dbe9c95a32328d286a0af218f56"
 
   function createMap() {
     var parameters = {
@@ -33,6 +33,8 @@
 	});
   }
 
+
+
   var checkIfDataRequested = function() {
   				 // (not to send extra requests)
     while (gettingData === true) {
@@ -49,7 +51,7 @@
 
   var getWeather = function(northLat, eastLng, southLat, westLng) {
     gettingData = true;
-    var requestString = "http://api.openweathermap.org/data/2.5/box/city?bbox=" + westLng + "," + northLat + "," + eastLng + "," + southLat + "," + map.getZoom() 
+    var requestString = "https://api.openweathermap.org/data/2.5/box/city?bbox=" + westLng + "," + northLat + "," + eastLng + "," + southLat + "," + map.getZoom() 
     + "&cluster=yes&format=json" + "&APPID=" + openWeatherMapKey;
     request = new XMLHttpRequest();
     request.onload = proccessResults;
@@ -68,6 +70,8 @@
     }
   };
 	var infowindow = new google.maps.InfoWindow();
+
+
 
   //convert results to geoJSON
   var jsonToGeoJson = function (weatherItem) {
@@ -96,6 +100,8 @@
     return feature;
   };
 
+
+
   var drawIcons = function (weather) {
      map.data.addGeoJson(geoJSON);
      gettingData = false;
@@ -111,4 +117,6 @@
     });
   };
   
+
+
   google.maps.event.addDomListener(window, 'load', createMap);
